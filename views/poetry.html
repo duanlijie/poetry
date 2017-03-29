@@ -1,0 +1,35 @@
+{% extends "./layout/layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="content_wrapper wrapper"> 
+	<h2 class="title">{{author}}:{{title}}</h2> 
+	<div class="poetry_content">
+		<h3>{{title}}</h3>
+		<p class="year">年代: <a href="{{yearHref}}">{{year}}</a></p>
+		<p class="author">作者: <a href="/author{{authorHref}}">{{author}}</a></p>
+		<p class="content"></p>
+	</div>  
+</div>
+<!-- 赏析部分 -->
+<div class="appreciation">
+
+</div>
+<div class="hide_content hide">{{content}}</div>
+<div class="hide_appreciation hide">{{appreciation}}</div>
+{% endblock %}
+
+{% block script %}
+<script>
+	$(function () {
+		var content = $('.hide_content').text()
+		var appreciation = $('.hide_appreciation').text()
+		$('.content_wrapper .poetry_content .content').html(content)
+		$('.appreciation').html(appreciation).find('a').removeAttr('href')
+		$('.main img').remove()
+	})
+	
+</script>
+{% endblock %}

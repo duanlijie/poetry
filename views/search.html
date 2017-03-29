@@ -1,0 +1,26 @@
+{% extends "./layout/layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="search_content">
+	
+</div>
+<div class="content_hide hide">{{data}}</div>
+{% endblock %}
+
+{% block script %}
+<script>
+	$(function () {
+		var data = $('.content_hide').text()
+		if (!data) {
+			$('.search_content').html('没有查询到结果')
+		}else {
+			$('.search_content').html(data).find('ul').addClass('clearfix')
+		}
+		// var image = $('.search_content img')
+		// image.remove()
+	})
+</script>
+{% endblock %}

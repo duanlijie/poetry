@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none; }
+
+ul, ol {
+  list-style: none; }
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体"; }
+
+/*去掉行内替换元素空白缝隙*/
+select, input {
+  vertical-align: middle; }
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0; }
+
+/*防止拖动 影响布局*/
+textarea {
+  resize: none; }
+
+/*去掉行内替换元素空白缝隙*/
+img {
+  border: 0;
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse; }
+
+body {
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  /*宋体 unicode */
+  color: #333;
+  background-color: #E6E5C9;
+  min-width: 1226px; }
+
+/*清除浮动*/
+.clearfix:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+a:hover {
+  color: #FF6700; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%; }
+
+s, i, em {
+  font-style: normal;
+  text-decoration: none; }
+
+/*公共类*/
+.wrapper {
+  /*版心 提取 */
+  width: 1226px;
+  margin: 0 auto; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.hide {
+  display: none; }

@@ -1,0 +1,23 @@
+{% extends "./layout/layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="mark_content">
+	<h2>{{title}}</h2>
+	<ul>
+		{% for item in list %}
+	    <li>
+	        <h4 class="title"><a href="/poetry{{item.titleHref}}">《{{item.title}}》</a></h4>
+	        <span class="year"><a href="{{item.yearHref}}">{{item.year}}</a></span>
+	        <span class="author"><a href="/author{{item.authorHref}}">{{item.author}}</a></span>
+	        <span class="content">{{item.des}}</span>
+	    </li>
+	    {% endfor %}
+	</ul>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

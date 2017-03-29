@@ -1,0 +1,20 @@
+{% extends "./layout/layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block content %}
+<div class="category_content">
+	<h2>{{title}}</h2>
+	<ul>
+	{% for item in list %}
+	    <li>
+	       <a href="/author{{item.href}}">{% if item.name %}{{item.name}}{% else %}无名{% endif %}</a> 
+	    </li>
+	{% endfor %}
+	</ul>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

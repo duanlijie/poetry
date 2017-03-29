@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*header部分*/
+.header {
+  position: relative;
+  width: 100%;
+  height: 126px;
+  background: url("../images/hd_bg.jpg") center center no-repeat; }
+  .header .logo a {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+    background: url("../images/logo3.png") center no-repeat;
+    text-indent: -2000px; }
+  .header .search {
+    position: absolute;
+    top: 50px;
+    right: 30%;
+    font-size: 0; }
+    .header .search .search_txt {
+      display: inline-block;
+      width: 200px;
+      height: 35px;
+      border: 1px solid #ECECEC;
+      text-indent: 10px; }
+    .header .search .search_btn {
+      display: inline-block;
+      width: 50px;
+      height: 37px;
+      border: 1px solid #ECECEC;
+      border-left: 0 none;
+      background-color: #ECECEC;
+      color: #333333;
+      font-family: 隶书;
+      font-size: 20px;
+      cursor: pointer; }
+
+/*nav部分*/
+.nav_wrapper {
+  width: 100%;
+  background-color: #8D061F; }
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav > li {
+  position: relative;
+  display: block; }
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin: 0 13px;
+  color: #fff; }
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #fff;
+  color: #BA231A; }
+
+/*左侧侧边栏部分*/
+.sidebar_l {
+  width: 256px;
+  margin-top: 20px; }
+  .sidebar_l .sidebar_item {
+    position: relative;
+    height: 300px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    background: url("../images/side-widget-hd.jpg") center top no-repeat;
+    background-color: #fff; }
+  .sidebar_l .years .title, .sidebar_l .category .title, .sidebar_l .view .title {
+    margin: 10px 0 15px 0;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 500; }
+  .sidebar_l .years .mark_item, .sidebar_l .category .mark_item, .sidebar_l .view .mark_item {
+    float: left;
+    width: 68px;
+    height: 40px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center; }
+  .sidebar_l .more {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+
+/*内容部分*/
+.main {
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 57px;
+  padding: 25px;
+  background-size: 600px 700px;
+  background-color: #F7F7F7; }
+  .main .content_wrapper {
+    width: 100%; }
+    .main .content_wrapper .title {
+      font-size: 22px; }
+    .main .content_wrapper .poetry_content {
+      margin-top: 50px;
+      text-align: center; }
+      .main .content_wrapper .poetry_content h3 {
+        height: 35px;
+        font-size: 20px; }
+      .main .content_wrapper .poetry_content .year, .main .content_wrapper .poetry_content .author {
+        height: 25px; }
+      .main .content_wrapper .poetry_content .content {
+        line-height: 30px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        font-family: '微软雅黑'; }
+  .main .appreciation h3 {
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+    font-size: 20px;
+    height: 80px; }
+  .main .appreciation p {
+    text-indent: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px; }
+  .main .mark_content h2 {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px; }
+  .main .mark_content li {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px dashed #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .main .mark_content li a{
+      color: #00CC99;
+    }
+    .main .mark_content li .title {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px; }
+    .main .mark_content li .content {
+      margin: 0 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .main .mark_content .mark_list li{
+    float: left;
+    width: 25%;
+  }
+  .main .mark_content .mark_list li:last-child{
+    width: 100%;
+  }
+  .main .category_content h2 {
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px; }
+  .main .category_content li {
+    display: inline-block; }
+    .main .category_content li a {
+      display: block;
+      width: 80px;
+      margin-top: 20px;
+      text-align: center;
+      color: green; }
+
+.main .search_content h3{
+  height: 50px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+}
+.main .search_content h3 span{
+  font-size: 16px;
+  float: right;
+}
+.main .search_content ul{
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+.main .search_content a{
+  color: #0196e3;
+}
+.main .search_content ul li{
+  margin-right: 5px;
+  display: inline-block; 
+}
+.main .search_content em{
+  color: #FF0000;
+}
+.main .search_content ul li:last-child{
+  display: inline;
+}
+/*右侧侧边栏*/
+.sidebar_r {
+  width: 256px; }
+  .sidebar_r .random {
+    position: relative;
+    height: 500px;
+    margin-top: 20px;
+    background: url("../images/bg (2)_r2_c2.jpg") center center no-repeat;
+    background-size: 256px 500px;
+    background-color: #fff;
+    overflow: hidden; }
+    .sidebar_r .random .poetry_content {
+      height: 250px;
+      margin: 40px 20px 0;
+      text-align: center;
+      overflow: auto; 
+    }
+      .sidebar_r .random .poetry_content h3 {
+        padding: 10px 0;
+        margin-bottom: 15px;
+        font-size: 18px; }
+      .sidebar_r .random .poetry_content .year, .sidebar_r .random .poetry_content .author {
+        height: 25px; }
+      .sidebar_r .random .poetry_content .content {
+        line-height: 30px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        font-family: '微软雅黑'; }
+    .sidebar_r .random .change,.sidebar_r .random .all {
+      position: absolute;
+      right: 30px;
+      top: 60%; }
+    .sidebar_r .random .all{
+      left: 30px;
+    }
+
+/*footer部分*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center; }
+  .footer .friend_link {
+    color: #fff; }
+    .footer .friend_link dt, .footer .friend_link dd {
+      display: inline-block; }
+    .footer .friend_link a {
+      display: block;
+      padding: 0 10px;
+      color: #fff; }
+  .footer .about {
+    margin-top: 10px;
+    letter-spacing: 2px; }
+  .footer .wechat {
+    position: absolute;
+    top: 10px;
+    right: 280px;
+    width: 100px;
+    height: 100px;
+    background: url("../images/wechat.jpg") center center no-repeat;
+    background-size: 100px 100px; }

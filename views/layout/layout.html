@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>我爱诗词</title>
+        <link rel="icon" href="/public/favicon.ico">
+        <link rel="stylesheet" href="/public/css/bootstrap.css">
+        <link rel="stylesheet" href="/public/css/base.css">
+        <link rel="stylesheet" href="/public/css/index.css">
+    </head>
+    <body>
+    <!-- header部分 -->
+    {% include "./header.html" %}
+    <!-- 导航部分 -->
+	{% include "./navbar.html" %}
+    <!-- 内容容器 -->
+    <div class="wrapper clearfix">
+        <!-- 左侧边栏 -->
+       {% include "./sidebar-l.html" %}
+        <!-- 内容部分 -->
+        <div class="main wrapper fl">
+        {% block content %}
+        {% endblock %}
+        </div>
+        
+        <!-- 右侧边栏 -->
+		{% include "./sidebar-r.html" %}
+    </div>
+    <!-- footer部分 -->
+	{% include "./footer.html" %}
+	<script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/bootstrap.js"></script>
+    <script src="/node_modules/art-template/dist/template-native.js"></script>
+    <script src="/public/js/index.js"></script>
+	{% block script %}
+	{% endblock %}
+    </body>
+    
+</html>
